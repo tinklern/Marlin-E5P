@@ -483,10 +483,10 @@
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-  // Creality Ender-5 Pro
-  #define DEFAULT_Kp 21.73
-  #define DEFAULT_Ki 1.54
-  #define DEFAULT_Kd 76.55
+  // Creality Ender-5 Pro with custom fan speed
+  #define DEFAULT_Kp 19
+  #define DEFAULT_Ki 1.3
+  #define DEFAULT_Kd 80
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -806,7 +806,8 @@
  *   http://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
  */
 #if DISABLED(CLASSIC_JERK)
-  #define JUNCTION_DEVIATION_MM 0.013 // (mm) Distance from real junction edge
+  // e5p: Equivalent of increasing classic jerk to 15: 15^2/500*0.4 = .018
+  #define JUNCTION_DEVIATION_MM 0.018 // (mm) Distance from real junction edge
 #endif
 
 /**
