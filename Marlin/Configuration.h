@@ -818,7 +818,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-#define S_CURVE_ACCELERATION  // e5p: note: I'm currently testing this
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -1486,7 +1486,7 @@
 
 #define PREHEAT_2_LABEL       "hot"
 #define PREHEAT_2_TEMP_HOTEND 210
-#define PREHEAT_2_TEMP_BED    60
+#define PREHEAT_2_TEMP_BED    65
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
