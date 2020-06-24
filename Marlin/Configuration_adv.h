@@ -2457,7 +2457,7 @@
    */
   #define STEALTHCHOP_XY
   #define STEALTHCHOP_Z
-  #define STEALTHCHOP_E
+  //#define STEALTHCHOP_E // e5p: stealthChop is not compatible with linear advance
 
   /**
    * Optimize spreadCycle chopper parameters by using predefined parameter sets
